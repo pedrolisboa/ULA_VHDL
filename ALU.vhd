@@ -1,33 +1,5 @@
-----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
--- 
--- Create Date:    10:43:24 10/17/2016 
--- Design Name: 
--- Module Name:    ALU - Behavioral 
--- Project Name: 
--- Target Devices: 
--- Tool versions: 
--- Description: 
---
--- Dependencies: 
---
--- Revision: 
--- Revision 0.01 - File Created
--- Additional Comments: 
---
-----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx primitives in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
 
 entity ALU is
 	port (inputA : in STD_LOGIC_VECTOR (3  downto 0);
@@ -113,7 +85,7 @@ au_operator  : AU port map (inputA, inputB, selectionVector, outputALU, carryOut
 		end case;		
 	end process;
 	
-	--Empacotamento  dos flags de carry e overflow para um vector de saída
+	--Empacotamento  dos flags de carry e overflow para um vector de saÃ­da
 	au_flags(0) <= overflow;
 	au_flags(1) <= carryOut;
 
