@@ -19,21 +19,21 @@ architecture behavioral_ALU of ALU is
   end component;
 
   component orOp
-	port (vectorA : in STD_LOGIC_VECTOR (3 downto 0);
+	port (	vectorA : in STD_LOGIC_VECTOR (3 downto 0);
 			vectorB : in STD_LOGIC_VECTOR (3 downto 0);
 			vectorOut : out STD_LOGIC_VECTOR (3 downto 0)
  	);
   end component;
 
   component xorOp
-	port (vectorA : in STD_LOGIC_VECTOR (3 downto 0);
+	port (	vectorA : in STD_LOGIC_VECTOR (3 downto 0);
 			vectorB : in STD_LOGIC_VECTOR (3 downto 0);
 			vectorOut : out STD_LOGIC_VECTOR (3 downto 0)
  	);
   end component;
   
   component AU
-		port (inputVectorA : in STD_LOGIC_VECTOR (3  downto 0);
+		port (	inputVectorA : in STD_LOGIC_VECTOR (3  downto 0);
 				inputVectorB : in STD_LOGIC_VECTOR (3 downto 0);
 				selectionVector : in STD_LOGIC_VECTOR (2 downto 0);
 				output : out STD_LOGIC_VECTOR (3 downto 0);
@@ -56,20 +56,20 @@ au_operator  : AU port map (inputA, inputB, selectionVector, outputALU, carryOut
 	begin
 		case selectionVector is
 			when	"000" =>
-					--ADD
-					output <= outputAND;
+				--ADD
+				output <= outputAND;
  			when	"001" =>
-					--OR
-					output <= outputOR;
+				--OR
+				output <= outputOR;
  			when	"010" =>
-					--XOR
-					output <= outputXOR;
+				--XOR
+				output <= outputXOR;
  			when	"011" =>
-               --INCREMENTO
-					output <= outputALU;
+               	--INCREMENTO
+				output <= outputALU;
 			when	"100" =>
-               --SOMA
-               output <= outputALU;
+              	--SOMA
+               	output <= outputALU;
 			when	"101" =>
                --SUBTRACAO
                output <= outputALU;
@@ -77,11 +77,11 @@ au_operator  : AU port map (inputA, inputB, selectionVector, outputALU, carryOut
                --SOMA COM CARRY
                output <= outputALU;
 			when	"111" =>
-					--INVERTER
-					output <= outputALU;
+				--INVERTER
+				output <= outputALU;
 			when others =>
-					--SOMA
-					output <= outputALU;
+				--SOMA
+				output <= outputALU;
 		end case;		
 	end process;
 	
