@@ -65,17 +65,17 @@ au_operator  : AU port map (inputA, inputB, selectionVector, outputALU, carryOut
 				--XOR
 				output <= outputXOR;
  			when	"011" =>
-               	--INCREMENTO
+               			--INCREMENTO
 				output <= outputALU;
 			when	"100" =>
-              	--SOMA
-               	output <= outputALU;
+              			--SOMA
+               			output <= outputALU;
 			when	"101" =>
-               --SUBTRACAO
-               output <= outputALU;
+               			--SUBTRACAO
+               			output <= outputALU;
 			when	"110" =>
-               --SOMA COM CARRY
-               output <= outputALU;
+               			--SOMA COM CARRY
+               			output <= outputALU;
 			when	"111" =>
 				--INVERTER
 				output <= outputALU;
