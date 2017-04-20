@@ -11,7 +11,7 @@ The  report of the project is currently avaliable in brazilian portuguese only..
 
 
 
-    Esse projeto contém o código fonte para um dispositivo que implementa uma Unidade-Lógico-Aritmética e um sistema de interface para testes.
+Esse projeto contém o código fonte para um dispositivo que implementa uma Unidade-Lógico-Aritmética e um sistema de interface para testes.
 O dispositivo descrito neste documento é capaz de receber dois vetores de 4 bits e processá-los com 4 operações lógicas (AND, OR, XOR, NOT) e 4 operações aritméticas (incremento,  soma, subtração, soma com carry). O resultado é apresentado através de um vetor de saída de 4 bits. Os valores de entrada são gerados de forma dinâmica através de um módulo gerador de entradas. O dispositivo segue um ciclo de 6 segundos: 2 segundos de apresentação do primeiro vetor de entrada; 2 segundos para apresentação do segundo vetor de entrada; 2 segundos para apresentação do resultado calculado pela ULA, correspondente à operação selecionada.
 O projeto foi desenvolvido sintetizado e implementado através da interface ISE da empresa Xilinx; simulado no simulador ISim, integrado com a ISE; e testado em hardware através de uma placa de desenvolvimento da Xilinx  com um chip FPGA Spartan-3 XC3S700A-FG484. 
 Para o teste  em hardware, os LEDs da placa de desenvolvimento foram configurados para apresentar os resultados do sistema, enquanto as chaves da placa (switches) controlavam a operação realizada pela ULA e os botões de pressão (pushbuttons), em conjunto com uma chave de placa, controlavam as entradas.
