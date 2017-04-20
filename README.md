@@ -1,7 +1,4 @@
 # ULA_VHDL
-======================
-THIS README IS NOT FINISHED
-======================
 
 Digital Systems assignment.
 
@@ -11,6 +8,7 @@ The  report of the project is currently avaliable in brazilian portuguese only..
   This project contains the source code for a devide that implements a Arithmetic Logi Unit and a interface for testing its funcitonality.
   The device is capable of processing two 4-bit inputs with one of 4 logic operations(AND,OR,XOR,NOT) and 4 arithmetic operations(Increment, sum, subtraction, sum with carry). It has one output for returning the  result of the operation. The input values are generated dynamically by a  input generation module. The device operates with a 6 second cicle: 2 seconds for presenting each input vector and 2 secons for presenting the result.
     The project was implemented on a Xilinx development board, with a FPGA Spartan-3 XC3S700A-FG484  chip. For this test,  LEDs  were configured to return the system inputs and outputs. Switch buttons controled the ALU operations and pushbuttons  controled  the inputs.
+
 
 
     Esse projeto contém o código fonte para um dispositivo que implementa uma Unidade-Lógico-Aritmética e um sistema de interface para testes.
